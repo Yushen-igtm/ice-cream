@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SweetTreats Ice Cream</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    header {
+      background-color: #fc0580;
+      color: rgb(214, 211, 211);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header{
+      background-image:urlI(images (1).jpg);
+    }
+
+    nav {
+      background-color: #0c0a0b;
+      color: aliceblue;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ff3399;
+      font-weight: bold;
+    }
+
+    nav a.active{
+      color: #ddf509;
+    }
+
+    nav a:hover{
+      color: #ddf509;
+      font-size: 16px;
+    }
+
+    .hero {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(253, 5, 5);
+      text-shadow: 2px 2px 4px #fd0404;
+      color: #f80519;
+      font-size: 4em;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #ff3399;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      background-color: #fff;
+      border: 2px solid #ffccdd;
+      border-radius: 10px;
+      width: 220px;
+      padding: 20px;
+      box-shadow: 2px 2px 10px #ddd;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #f3c705;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #f50599;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      types:hover;
+    }
+    button.type submit{
+      background-color: #f7114a;
+      color: #000;
+      color: hover;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero {
+        font-size: 1.5em;
+        height: 200px;
+      }
+      nav a {
+        display: inline-block;
+        margin: 5px 10px;
+      }
+      .product {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body background="img/bg img.jpg">
+    <header>
+    <h1>SweetTreats Ice Cream & Cakes</h1>
+    <h2>YOU GO CAN DO!</h2>
+    <h3>Cool down with our delicious flavors and cakes!</h3>
+  </header>
+
+  <nav>
+    <a href="#home" class="active">Home</a>
+    <a href="#flavors">Flavors</a>
+    <a href="#cakes">Cakes</a>
+    <a href="#sales">Sales</a>
+    <a href="#order">Order Online</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <div><a>Welcome to SweetTreats! 🍦🎂</a></div>
+  </section>
+
+  <!-- Ice Cream Flavors -->
+  <section class="section" id="flavors">
+    <h2>Our Popular Flavors</h2>
+    <div class="products">
+      <div class="product">
+        <img src="img/str ice.jpg"alt="Strawberry Ice Cream">
+        <h3>Strawberry Bliss</h3> 
+        <p>Fresh strawberries in every bite!</p>
+      </div>
+      <div class="product">
+        <img src="img/chocalate ice.jpg" alt="Chocolate Ice Cream">
+        <h3>Choco Overload</h3>
+        <p>Rich, creamy, and super chocolatey.</p>
+      </div>
+      <div class="product">
+        <img src="img\vennila images.jpg" alt="Vanilla Ice Cream">
+        <h3>Vanilla Dream</h3>
+        <p>Classic vanilla with a smooth finish.</p>
+      </div>
+      <div class="product">
+        <img src="img/mix images.jpg" alt="Mint Ice Cream">
+        <h3>Mint Fresh</h3>
+        <p>Cool mint with chocolate chips.</p>
+      </div>
+      <div class="product">
+        <img src="img/rainbow ice.jpg" alt="mixed item">
+        <h3>rainbow ice </h3>
+        <p>best model of finishing rate</p>
+      </div>
+      <div class="product">
+        <img src="img/mix.png" alt="overall item">
+        <h3>colorflaver ice cream</h3>
+        <p>mint cool fresh ice</p>
+      </div>
+      <div class="product">
+        <img src="img/black butter ice.jpg" alt="img/black butter ice.jpg">
+        <h3>black butter ice</h3>
+        <p>butter is blooming flaver</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ice Cream Cakes -->
+  <section class="section" id="cakes">
+    <h2>Ice Cream Cakes 🎂</h2>
+    <p>Perfect for birthdays, weddings, and celebrations!</p>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Chocolate Ice Cream Cake">
+        <h3>Choco Fudge Cake</h3>
+        <p>Layers of chocolate ice cream & fudge.</p>
+      </div>
+      <div class="product">
+        <img src="cake img/straberi cake.jpg" alt="Strawberry Ice Cream Cake">
+        <h3>Strawberry Cheesecake</h3>
+        <p>Strawberries & cream layered to perfection.</p>
+      </div>
+      <div class="product">
+        <img src="cake img/rainbow.jpg" alt="Rainbow Cake">
+        <h3>Rainbow Surprise</h3>
+        <p>A colorful treat with 6 ice cream flavors.</p>
+      </div>
+      <div class="product">
+        <img src="cake img/vennila.jpg" alt="vennila cake">
+        <h3>vennila Cake</h3>
+        <p>vennila cake is a sweet flaver</p>
+      </div>
+      <div class="product">
+        <img src="cake img/chaco img.jpg" alt="choculate flaver">
+        <h3>black butter cake</h3>
+        <p>black butter flaver cake in dark mood</p>
+      </div>
+      <div class="product">
+        <img src="cake img/uni.jpg" alt="unicon">
+        <h3>unicorn Cake</h3>
+        <p>picture img for cake flaver</p>
+      </div>
+      <div class="product">
+        <img src="cake img/black and white.jpg" alt="cake img/black and white.jpg">
+        <h3>black&white cake</h3>
+        <p>theme of power and identity </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sales -->
+  <section class="section" id="sales">
+    <h2>Special Offers & Sales</h2>
+    <div class="products">
+      <div class="product">
+        <h3>🍨 Buy 1 Get 1 Free</h3>
+        <p>Every Tuesday on single scoops!</p>
+      </div>
+      <div class="product">
+        <h3>🎉 Family Pack Discount</h3>
+        <p>20% off on 1-liter family packs this weekend.</p>
+      </div>
+      <div class="product">
+        <h3>💖 Student Special</h3>
+        <p>Show your student ID & get 15% off anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Online -->
+  <section class="section" id="order">
+    <h2>Order Online 🛒</h2>
+    <p>Choose your favorite flavors and cakes!</p>
+    <form>
+      <select required>
+        <option value="">Select Ice Cream Flavor</option>
+        <option>Strawberry Bliss</option>
+        <option>Choco Overload</option>
+        <option>Vanilla Dream</option>
+        <option>Mint Fresh</option>
+        <option>rainbow ice</option>
+        <option>colorflaver</option>
+        <option>black butter</option>
+        <option>none</option>
+      </select>
+      <select required>
+        <option value="">Select Cake</option>
+        <option>Choco Fudge Cake</option>
+        <option>Strawberry Cheesecake</option>
+        <option>Rainbow Surprise</option>
+        <option>vennila cake</option>
+        <option>blackbtter Cake</option>
+        <option>unicon Cake</option>
+        <option>black&white</option>
+        <option>none</option>
+      </select>
+      <input type="number" placeholder="Quantity" min="1" required />
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Delivery Address" required />
+      <button type="submit"><a href="booking page.html">Place order</a></button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question? We’d love to hear from you!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit"><a href="submit page.html">Send Message</a></button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 SweetTreats Ice Cream. All rights reserved.
+  </footer>
+
+</body>
+</html
